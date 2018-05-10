@@ -1,0 +1,23 @@
+---
+
+app:
+
+  # Resource Config
+  resource:
+    config:
+      auto-refresh: true
+      connect-timeout-ms: 1000
+      url: http://config.example.com/app1
+
+  # Service Config
+  service:
+    - name: account service
+      address:
+        - http://account1.example.com/api/v1
+        - http://account2.example.com/api/v1
+        - http://account3.example.com/api/v1
+    - name: order service
+      address:
+        - http://order1.example.com/api/v1
+        - http://order2.example.com/api/v1
+        - http://order3.example.com/api/v1
